@@ -4,13 +4,12 @@ django-bcs-proxy
 > proxy for baidu cloud service with django
 
 
-Isage
------
+Install
+-------
 
 ```Bash
 $ pip install django-bcs-proxy
 ```
-
 
 Usage
 -----
@@ -19,10 +18,9 @@ Usage
 # in urls.py
 import django_bcs_proxy
 
-
 urlpatterns += (
 	#...
-	('URL', django_bcs_proxy(AK, SK, HOST)),
+	(r'URL', django_bcs_proxy(AK, SK, HOST)),
 	#...
 )
 ```
